@@ -19,10 +19,10 @@ public class HomeController {
         return "Hello, Víctor G.";
     }
 
-	@RequestMapping("/hotfix")
+    @RequestMapping("/hotfix")
     public @ResponseBody
     String greetingHotfix() {
-        return "Hello, Hotfix";
+        return "Hello, From Hotfix";
     }
 
 }
