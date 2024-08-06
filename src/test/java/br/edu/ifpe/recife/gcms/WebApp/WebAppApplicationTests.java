@@ -15,25 +15,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 class WebAppApplicationTests {
 
-<<<<<<< HEAD
-	@Test
-	public void shouldReturnDefaultMessage() throws Exception {
-		this.mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk())
-				.andExpect(content().string(containsString("Hello, World")));
-	}
-	
-	@Test
-	public void shouldReturnDefaultMessageVictor() throws Exception {
-		this.mockMvc.perform(get("/victor")).andDo(print()).andExpect(status().isOk())
-				.andExpect(content().string(containsString("Hello, Víctor")));
-	}
-
-	@Test
-	public void shouldReturnDefaultMessageHotfix() throws Exception {
-		this.mockMvc.perform(get("/victor")).andDo(print()).andExpect(status().isOk())
-				.andExpect(content().string(containsString("Hello, Hotfix")));
-	}
-=======
     @Autowired
     private MockMvc mockMvc;
 
@@ -55,5 +36,4 @@ class WebAppApplicationTests {
                 .andExpect(content().string(containsString("Hello, From Hotfix")));
     }
 
->>>>>>> hotfix
 }
