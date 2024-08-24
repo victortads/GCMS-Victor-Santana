@@ -32,7 +32,7 @@ class WebAppApplicationTests {
 
     @Test
     public void shouldReturnDefaultMessageHotfix() throws Exception {
-        this.mockMvc.perform(get("/hotfiX")).andDo(print()).andExpect(status().isOk())
+        this.mockMvc.perform(get("/hotfix")).andDo(print()).andExpect(status().isOk())
                 .andExpect(content().string(containsString("Hello, From Hotfix")));
     }
 
