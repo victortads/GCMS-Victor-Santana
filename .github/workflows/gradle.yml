@@ -14,13 +14,14 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
 
-    runs-on: ubuntu-latest
-    permissions:
+build:
+ runs-on: ubuntu-latest
+ container:
+ image: docker://victortads/docker:image-docker
+ permissions:
       contents: read
-
-    steps:
+steps:
     - uses: actions/checkout@v4
     - name: Set up JDK 17
       uses: actions/setup-java@v4
